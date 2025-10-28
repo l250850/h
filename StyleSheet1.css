@@ -1,0 +1,149 @@
+﻿body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #0f172a;
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.photo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+    .photo-wrap img {
+        width: 200px;
+        height: 200px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+.name {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+}
+
+.designation {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.sidebar h3 {
+    color: #1e293b;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #0ea5a4;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.sidebar ul {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+    color: #555;
+}
+
+.sidebar a {
+    color: #0ea5a4;
+    text-decoration: none;
+}
+
+.main {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .main h1,
+    .main h2 {
+        color: #1e293b;
+        margin-top: 0;
+    }
+
+.intro p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #e2e8f0;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.project {
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    transition: transform 0.2s ease;
+}
+
+    .project:hover {
+        transform: scale(1.02);
+        background-color: #eef2ff;
+    }
+
+    .project h3 {
+        margin-top: 0;
+        color: #0f172a;
+    }
+
+.cv-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+@media (max-width: 880px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-wrap img {
+        width: 160px;
+        height: 160px;
+    }
+}
